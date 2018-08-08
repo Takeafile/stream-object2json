@@ -5,16 +5,14 @@ const {duplex} = require('..')
 
 test('object', function(done)
 {
-  const expected = {asdf: 1234}
-
   duplex(new PassThrough)
-  .on('data', function(data)
+  .on('error', function(error)
   {
-    expect(data).toEqual(expected)
+    expect(error).toEqual('Source stream must be in object mode')
 
     done()
   })
-  .write(expected)
+  .write({asdf: 1234})
 })
 
 test('object (duplex objectMode)', function(done)
@@ -35,7 +33,7 @@ test('string', function(done)
 {
   const expected = "asdf"
 
-  duplex(new PassThrough)
+  duplex(new PassThrough({objectMode: true}))
   .on('data', function(data)
   {
     expect(data.toString()).toEqual(expected)
