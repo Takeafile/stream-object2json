@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/Takeafile/stream-object2json.svg?branch=master)](https://travis-ci.org/Takeafile/stream-object2json)
+[![Coverage Status](https://coveralls.io/repos/github/Takeafile/stream-object2json/badge.svg?branch=master)](https://coveralls.io/github/Takeafile/stream-object2json?branch=master)
+
 # stream-object2json
 
 Convert object mode streams to and from JSON strings

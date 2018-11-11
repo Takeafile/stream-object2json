@@ -4,6 +4,7 @@
   "description": "Convert object mode streams to and from JSON strings",
   "main": "lib",
   "scripts": {
+    "coverage": "npm test -- --coverageReporters=text-lcov | coveralls",
     "test": "jest --coverage --notify"
   },
   "repository": {
@@ -25,6 +26,7 @@
     "pumpify": "^1.5.1"
   },
   "devDependencies": {
+    "coveralls": "^3.0.2",
     "jest": "^23.6.0"
   },
   "jest": {
