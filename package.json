@@ -1,7 +1,7 @@
 {
   "name": "stream-object2json",
   "version": "0.0.0",
-  "description": "",
+  "description": "Convert object mode streams to and from JSON strings",
   "main": "lib",
   "scripts": {
     "test": "jest --coverage --notify"
