@@ -23,7 +23,7 @@
   "license": "ISC",
   "homepage": "https://github.com/Takeafile/stream-object2json#readme",
   "dependencies": {
-    "pumpify": "^1.5.1"
+    "pumpify": "^2.0.1"
   },
   "devDependencies": {
     "coveralls": "^3.0.2",
